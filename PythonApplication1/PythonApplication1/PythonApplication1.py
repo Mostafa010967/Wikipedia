@@ -8,7 +8,7 @@ window.title("MY Mini Wikipedia")
 window.config(bg="black")
 
 # Heading label
-Label(window, text="MY Mini Wikipedia", font=("Times", 30, "bold"), bg="lightgreen").pack(side=TOP, pady=10)
+Label(window, text="MY Mini Wikipedia", font=("Times", 30, "bold"), bg="#00A86B").pack(side=TOP, pady=10)
 
 # Search label and entry box
 Label(window, text="Search", font=("Arial", 20, "bold"), bg="yellow").pack(side=TOP, pady=5)
@@ -37,10 +37,10 @@ button1 = Button(window, text="Search", font=("Arial", 15, "bold"), bg="red", fg
 button1.pack(side=TOP, pady=5)
 
 # Searched results label
-Label(window, text="Searched Results", font=("Arial", 25, "bold"), bg="lightpink").pack(side=TOP, pady=10)
+Label(window, text="Searched Results", font=("Arial", 25, "bold"), bg="#FFFDD0").pack(side=TOP, pady=10)
 
 # Text widget for displaying results
-text = Text(window, font=("Arial", 17, "bold"), bg="lightblue", padx=20, pady=10, wrap=WORD)
+text = Text(window, font=("Arial", 17, "bold"), bg="gray", padx=20, pady=10, wrap=WORD)
 text.pack(pady=10, padx=10)
 
 # Start the main event loop
