@@ -17,7 +17,7 @@ entry_box.pack(side=TOP, pady=5)
 entry_box.focus_set()
 
 # Search button function
-def text_Search():
+def text_Search(event=None):  # Accept event argument for key binding
     text.delete('1.0', END)  # Clear previous results
     query = entry_box.get()
     try:
@@ -35,6 +35,9 @@ def text_Search():
 # Search button
 button1 = Button(window, text="Search", font=("Arial", 15, "bold"), bg="red", fg="white", command=text_Search)
 button1.pack(side=TOP, pady=5)
+
+# Bind the "Enter" key to the search function
+window.bind('<Return>', text_Search)
 
 # Searched results label
 Label(window, text="Searched Results", font=("Arial", 25, "bold"), bg="#FFFDD0").pack(side=TOP, pady=10)
