@@ -4,11 +4,11 @@ import wikipedia as wk
 
 # Initialize the main window
 window = Tk()
-window.title("MY Mini Wikipedia")
+window.title("MY Wikipedia")
 window.config(bg="black")
 
 # Heading label
-Label(window, text="MY Mini Wikipedia", font=("Times", 30, "bold"), bg="#00A86B").pack(side=TOP, pady=10)
+Label(window, text="MY Wikipedia", font=("Times", 30, "bold"), bg="#00A86B").pack(side=TOP, pady=10)
 
 # Search label and entry box
 Label(window, text="Search", font=("Arial", 20, "bold"), bg="yellow").pack(side=TOP, pady=5)
